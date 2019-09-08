@@ -1,0 +1,15 @@
+html, body{
+    padding:0;
+    margin:0;
+    text-align: center;
+
+}
+header{
+    width: 100%;
+}
+header img{
+    width: 10%;
+}
+input[type=text]{
+    width: 30%;
+}

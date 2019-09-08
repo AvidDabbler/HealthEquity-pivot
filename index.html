@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <img src="logo.jpg">
+            <br>
+            <h1>Metro Saint Louis Call-A-Ride Scheduler</h1>
+        </header>
+        <h2>If you are visually impared call <a href="tel:+1-314-289-5230">314-289-5230</a> at any point to schedule an appointment.</h2>
+        <div id="input">
+            <div class="full-form">
+                
+                <h2>First Name</h2>
+                <form class="input" id="firstNm">
+                    <input name="Title" type="text">
+                </form>
+                
+                <h2>Last Name</h2>
+                <form class="input" id="lastNm">
+                    <input name="Title" type="text">
+                </form>
+
+                <h2>Home Location / Pickup Location</h2>
+                <form class="input" id="pickup">
+                    <input name="pickupLoc" type="text">
+                </form>
+            
+                <div class="select-hospitals">
+                        <h2>Destination</h2>
+                        <form id="definedID">
+                            <select name="definedDest" name="type">
+                                <option value="3015 N Ballas Rd, St. Louis, MO 63131, USA">Missouri Baptist Medical Center</option>
+                                <option value="1235 E Cherokee St, Springfield, MO 65804, USA">Mercy Hospital Springfield</option>
+                                <option value="232 S Woods Mill Rd, Chesterfield, MO 63017, USA">St. Luke’s Hospital-Chesterfield</option>
+                                <option value="615 S New Ballas Rd, St. Louis, MO 63141, USA">Mercy Hospital St. Louis</option>
+                                <option value="1015 Bowles Ave, Fenton, MO 63026, USA">SSM Health St. Clare Hospital-Fenton</option>
+                                <option value="1 Barnes Jewish Hospital Plaza, St. Louis, MO 63110, USA">Barnes-Jewish Hospital</option>
+                                <option value="other">Other Location</option>
+                            </select>
+                            <br>
+                            <svg height="50" width="400">
+                                    <line x1="0" y1="25" x2="400" y2="25" style="stroke:black;stroke-width:2" />
+                            </svg>   
+                        </form>
+                </div>
+            </div>
+
+            <button>submit</button>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
