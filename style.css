@@ -15,8 +15,13 @@ header{
 header img{
     width: 25%;
 }
+#visual-assistance{
+    width:80%;
+    display: flex;
+    margin: 0 10% 0 10%
+}
 input[type=text], input[type=email]{
-    width: 30%;
+    width: 60%;
 }
 li{
     text-decoration: none;
@@ -27,9 +32,11 @@ li{
     align:left;
 }
 .full-form{
+    padding: 25px;
+    border-radius: 25px;
     background-color: #c49991;
     width:60%;
-    margin: 0 20% 0 20%;
+    margin: 30px 20% 0 20%;
 }
 
 input{
