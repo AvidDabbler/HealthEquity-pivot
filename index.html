@@ -10,6 +10,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+
+    <!-- arcgis-rest-request and arcgis-rest-geocoder included for geocoding, reverse geocoding, and suggest (autocomplete) -->
+    <script src="https://unpkg.com/@esri/arcgis-rest-request@1.13.2/dist/umd/request.umd.min.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-geocoder@1.13.2/dist/umd/geocoder.umd.min.js"></script>
+    
+        <!-- JQuery-UI included for autocomplete: -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,24 +35,32 @@
             <div class="full-form">
                 
                 <h2>First Name</h2>
-                <form class="input" id="firstNm">
-                    <input name="Title" type="text">
+                <form class="input" >
+                    <input name="Title" type="text" id="firstNm">
                 </form>
                 
                 <h2>Last Name</h2>
-                <form class="input" id="lastNm">
-                    <input name="Title" type="text">
+                <form class="input">
+                    <input name="Title" type="text" id="lastNm">
+                </form>
+
+                <h2>Email</h2>
+                <form class="input" id="email">
+                    <input name="email" type="email" id="email">
                 </form>
 
                 <h2>Home Location / Pickup Location</h2>
-                <form class="input" id="pickup">
-                    <input name="pickupLoc" type="text">
-                </form>
-            
+                <div class="address">
+                    <form class="form" action="#" onSubmit="addressSearch()" id="searchSubmit">
+                        <input class="search" type="text" placeholder="Enter your address to find out" name="address" id="address">
+                    </form>
+                </div>
+                </div>
+
                 <div class="select-hospitals">
                         <h2>Destination</h2>
                         <form id="definedID">
-                            <select name="definedDest" name="type">
+                            <select id="pickup" name="definedDest" name="type">
                                 <option value="3015 N Ballas Rd, St. Louis, MO 63131, USA">Missouri Baptist Medical Center</option>
                                 <option value="1235 E Cherokee St, Springfield, MO 65804, USA">Mercy Hospital Springfield</option>
                                 <option value="232 S Woods Mill Rd, Chesterfield, MO 63017, USA">St. Luke’s Hospital-Chesterfield</option>
@@ -51,15 +69,22 @@
                                 <option value="1 Barnes Jewish Hospital Plaza, St. Louis, MO 63110, USA">Barnes-Jewish Hospital</option>
                                 <option value="other">Other Location</option>
                             </select>
+                        </form>
+
+  
+                        </div>
+
                             <br>
                             <svg height="50" width="400">
                                     <line x1="0" y1="25" x2="400" y2="25" style="stroke:black;stroke-width:2" />
                             </svg>   
-                        </form>
+
+                </div>
+
                 </div>
             </div>
 
-            <button>submit</button>
+            <button onclick="gather()">submit</button>
         
         <script src="app.js" async defer></script>
     </body>

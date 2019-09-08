@@ -10,6 +10,14 @@ header{
 header img{
     width: 10%;
 }
-input[type=text]{
+input[type=text], input[type=email]{
     width: 30%;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    background: white;
+    text-align: center;
+    display:flex;
+    align:left;
 }
