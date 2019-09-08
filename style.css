@@ -23,6 +23,11 @@ header img{
 input[type=text], input[type=email]{
     width: 60%;
 }
+input[id="address"],
+textarea {
+  background-color: white;
+  margin: 2px;
+}
 li{
     text-decoration: none;
     list-style: none;
