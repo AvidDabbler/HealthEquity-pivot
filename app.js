@@ -11,10 +11,15 @@ const gather = () => {
     const pickup = document.getElementById("address").value;
    // const dropoff = document.getElementById("dropoff").option;
     const email = document.getElementById("email").value;
+    const date = document.getElementById("date").value; 
+    const time = document.getElementById('time').value;
 
     console.log(`First Name: ${firstNm}`);
     console.log(`Last Name: ${lastNm}`);
     console.log(`Pick-Up Location: ${pickup}`);
+    console.log(`Email: ${email}`);
+    console.log(`Date: ${date}`);
+    console.log(`Time: ${time}`);
     //console.log(`Drop Off Location: ${dropoff}`);
 }
 
