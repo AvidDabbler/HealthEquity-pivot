@@ -2,13 +2,18 @@ html, body{
     padding:0;
     margin:0;
     text-align: center;
+    background-color: #279af1;
 
+}
+h1, h2, h3{
+    color: #131112;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     width: 100%;
 }
 header img{
-    width: 10%;
+    width: 25%;
 }
 input[type=text], input[type=email]{
     width: 30%;
@@ -20,4 +25,17 @@ li{
     text-align: center;
     display:flex;
     align:left;
+}
+.full-form{
+    background-color: #c49991;
+    width:60%;
+    margin: 0 20% 0 20%;
+}
+
+input{
+
+}
+
+button{
+    margin: 25px;
 }
